@@ -30,7 +30,7 @@ class TrainerControllerIntegrationTest {
     private String username;
 
     @Value("${spring.security.user.password}")
-    private String password = "123";
+    private String password;
 
     @Test
     void getTrainers_shouldThrowAnUnauthorized(){
