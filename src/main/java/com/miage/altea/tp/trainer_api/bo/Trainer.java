@@ -2,10 +2,7 @@ package com.miage.altea.tp.trainer_api.bo;
 
 import lombok.Data;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 import static javax.persistence.FetchType.EAGER;
@@ -28,5 +25,7 @@ public class Trainer {
         this.name = name;
     }
 
-    //[...]
+    @Column
+    private String password;
+
 }

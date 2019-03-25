@@ -24,7 +24,7 @@ class TrainerControllerTest {
     private TrainerController trainerController;
 
     @BeforeEach
-    void setup(){
+    void setup() {
         MockitoAnnotations.initMocks(this);
     }
 
@@ -43,7 +43,7 @@ class TrainerControllerTest {
     }
 
     @Test
-    void trainerController_shouldBeAnnotated(){
+    void trainerController_shouldBeAnnotated() {
         var controllerAnnotation =
                 TrainerController.class.getAnnotation(RestController.class);
         assertNotNull(controllerAnnotation);
